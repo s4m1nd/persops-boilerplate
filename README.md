@@ -1,4 +1,4 @@
-# s4m1nd/persops
+# s4m1nd/persops-boilerplate
 
 Nix configuration (not my actual config I tried to make it a little bit more modular) template for managing both macOS and NixOS Linux PC.
 
@@ -26,8 +26,8 @@ I currently have two systems I provision with this config:
 
 ```bash
 sh <(curl -L https://nixos.org/nix/install)
-git clone git@github.com:s4m1nd/persops.git
-cd persops
+git clone git@github.com:s4m1nd/persops-boilerplate.git
+cd persops-boilerplate
 # see ./nix README.md for more details after
 ```
 

@@ -1,5 +1,5 @@
 {
-  description = "s4m1nd persops";
+  description = "s4m1nd persops-boilerplate";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";

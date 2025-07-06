@@ -6,7 +6,7 @@ Setup instructions, notes, recommendations, and requirements
 
 - make sure you replaced my username from config
 - make sure you replaced all `/path/to` occurrences
-- desktop requires `/etc/nixos/hardware-configuration.nix` to be copied to `/path/to/persops/nix/hosts/desktop/hardware.nix`
+- desktop requires `/etc/nixos/hardware-configuration.nix` to be copied to `/path/to/persops-boilerplate/nix/hosts/desktop/hardware.nix`
 
 ### Replace my username (s4m1nd) from all files
 
@@ -50,7 +50,7 @@ sudo ln -s $(which bash) /bin/bash
 For NixOS you should copy your system `/etc/nixos/hardware-configuration.nix` locally. Required at rebuild iirc.
 
 ```bash
-cp /etc/nixos/hardware-configuration.nix /path/to/persops/nix-experimental/hosts/desktop/hardware.nix
+cp /etc/nixos/hardware-configuration.nix /path/to/persops-boilerplate/nix-experimental/hosts/desktop/hardware.nix
 ```
 
 ### how to rebuild on NixOS
@@ -97,7 +97,7 @@ nixos-enter
 
 # Fix the config and rebuild
 
-cd /home/s4m1nd/path/to/persops/nix
+cd /home/s4m1nd/path/to/persops-boilerplate/nix
 
 NIXOS_SWITCH_USE_DIRTY_ENV=1 nixos-rebuild boot --flake .#desktop --option sandbox false
 
